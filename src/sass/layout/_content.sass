@@ -1,0 +1,68 @@
+@import content/news
+@import content/distance
+@import content/races
+
+.participants-content
+	margin-top: 50px
+.content
+	h3
+		display: block
+		position: relative
+		p 
+			font-size: 24px
+			line-height: 24px
+			color: #263447
+			text-transform: uppercase
+			font-weight: 700
+			display: inline-block
+			background: #fff
+			padding-right: 20px
+		span
+			content: ""
+			display: block
+			background: #ebedf3
+			position: absolute
+			top: 50%	
+			left: 0
+			height: 2px
+			width: 100%
+			z-index: -1	
+			margin-top: -1px
+.participants
+	padding: 85px 0px
+	border-bottom: 2px solid #e5e9ee
+	margin-bottom: 70px
+.participants-item
+	text-align: center
+	display: block
+	font-size: 0
+	line-height: 0
+	margin-bottom: 38px
+	.participants-item-number 
+		float: left
+		color: #de4b4b
+		font-size: 18px
+		line-height: 20px
+		width: 10%
+	.participants-item-text
+		display: inline-block
+		text-align: left
+		width: 70%
+		p 
+			font-size: 20px
+			color: #2d3d53
+			line-height: 20px
+			display: block
+			margin-bottom: 10px
+		span
+			font-size: 16px
+			line-height: 16px
+			color: #5f6977
+			&:nth-of-type(1)
+				margin-right: 70px
+	.participants-item-year
+		float: right
+		width: 20%
+		font-size: 18px
+		line-height: 20px
+		color: #4f5a6b
