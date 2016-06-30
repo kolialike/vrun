@@ -1,0 +1,137 @@
+.logo
+	display: block
+	text-align: center
+	margin-top: 27px
+	margin-bottom: 30px
+.mobile-map-text-item
+	background: rgba(#da2828, 0.9)
+	text-decoration: none
+	font-size: 18px
+	line-height: 20
+	color: #ffffff
+	line-height: 18px
+	display: block
+	padding: 15px 20px
+	+box-sizing(border-box)
+	display: inline-block
+	text-decoration: none
+	img 
+		margin: 0 15px
+.mobile-map
+	position: relative
+.mobile-map-text
+	position: absolute
+	top: 60px
+	left: 50%
+	margin-left: -139px
+.mobile-map-img
+	position: relative
+	text-align: center
+.mobile-map-text-list
+	position: absolute
+	left: 0
+	top: -1000px
+	z-index: 1
+	background: #fff
+	width: 100%
+	padding: 15px 0px 13px
+	+opacity(0)
+	a 
+		font-size: 16px
+		line-height: 16px
+		display: block
+		color: #636c77
+		padding: 15px 20px
+		+box-sizing(border-box)
+		text-decoration: none
+		+transition(0.3s)
+		&:hover
+			color: #da2828
+		&.active
+			color: #da2828
+.mobile-map-text-list-open
+	.mobile-map-text-list
+		+opacity(1)
+		top: 52px
+	.city-arrow-d2
+		transform: rotate(180deg)
+
+
+.timer 
+	text-align: center
+	margin-top: 35px
+.timer > span 
+	color: #282c37
+	font-size: 16px
+	margin-bottom: 20px
+	height: 25px
+	display: inline-block
+	line-height: 25px
+	padding-left: 45px
+.times 
+	color: #282c37
+	font-size: 13px
+.times > div,
+.times > i 
+	display: inline-block
+	vertical-align: top
+	text-align: center
+.times > i 
+	font-style: normal
+	font-size: 23px
+	margin: 2px 3px
+.times > div > strong 
+	display: block
+	background: #da2828
+	color: #fff
+	font-size: 26px
+	letter-spacing: 0.10em
+	padding: 0 10px
+	border-radius: 3px
+	margin-bottom: 5px
+	height: 33px
+	line-height: 33px
+	box-sizing: border-box
+.ico-bots
+	background: image-url("bots.png") left center no-repeat
+
+.registration-participant
+	text-align: center
+	margin-bottom: 50px
+	h4
+		font-size: 24px
+		line-height: 26px
+		color: #393a3a
+		display: block
+		margin-top: 50px
+	h5
+		font-size: 36px
+		line-height: 40px
+		color: #1d2229
+		display: block
+		margin: 26px 0 40px
+		font-weight: 700
+	a 
+		font-size: 18px
+		line-height: 20px
+		color: #eeefee
+		background: #da2828
+		width: 250px
+		padding: 20px 0 17px
+		display: inline-block
+		text-decoration: none 
+		text-transform: uppercase
+		+border-radius(4px)
+		font-weight: 700
+		letter-spacing: 1px
+		+transition(0.2s)
+		&:hover
+			background: #f43c3c
+
+
+
+
+
+
+
+

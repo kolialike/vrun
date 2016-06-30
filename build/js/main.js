@@ -5,8 +5,8 @@ jQuery(function($){
  
   // tiny helper function to add breakpoints
   function getGridSize() {
-    return (window.innerWidth < 400) ? 1 :
-           (window.innerWidth < 770) ? 2 : 3;
+    return (window.innerWidth < 600) ? 1 :
+           (window.innerWidth < 800) ? 2 : 3;
   }
  
   $(function() {
@@ -17,21 +17,32 @@ jQuery(function($){
     $('.flexslider').flexslider({
       animation: "slide",
       animationLoop: false,
+      slideshow: true,                //Включание автопроигрывания слайдшоу (true/false)
+	  slideshowSpeed: 4000, 
+	  pauseOnAction: true,
+	  pauseOnHover: true,
       itemWidth: 210,
-      itemMargin: 5,
+      animationLoop: true,
+      itemMargin: 30,
       minItems: getGridSize(), // use function to pull in initial value
       maxItems: getGridSize() // use function to pull in initial value
     });
   });
  
   // check grid size on resize event
-  $window.resize(function() {
-    var gridSize = getGridSize();
+  // $window.resize(function() {
+  //   var gridSize = getGridSize();
  
-    flexslider.vars.minItems = gridSize;
-    flexslider.vars.maxItems = gridSize;
-  });
+  //   flexslider.vars.minItems = gridSize;
+  //   flexslider.vars.maxItems = gridSize;
+  // });
+	$window.on('resize orientationchange', function() {
+        var gridSize = getGridSize();
 
+        $(".flexslider").data("flexslider").vars.minItems = gridSize;
+        $(".flexslider").data("flexslider").vars.maxItems = gridSize;
+
+    });
   // menu
   var body = $("body");
 	var menuBurger = $(".menu-burger");
@@ -69,6 +80,20 @@ jQuery(function($){
 		body.toggleClass('news-left-open');
 	});
 
+	// media-left
+	var medialeft = $(".media-left");
+	medialeft.on('click', function(event) {
+		event.preventDefault();
+		body.toggleClass('media-left-open');
+	});
+
+	// map-left
+	var mobileMapTextItem = $(".mobile-map-text-item");
+	mobileMapTextItem.on('click', function(event) {
+		event.preventDefault();
+		body.toggleClass('mobile-map-text-list-open');
+	});
+
 	// filters 
 	var newsRightFilters = $(".news-right-filters");
 	newsRightFilters.on('click', function(event) {
@@ -87,3 +112,9 @@ jQuery(function($){
 	    newsContainer.eq(index).addClass('active').siblings().removeClass('active');    
 	  });
 });
+// $(window).load(function() {
+// 			$('.flexslider').flexslider({
+// 			 animation: "slide",
+// 			 controlsContainer: ".flexslider-container"
+// 			});
+// 		});

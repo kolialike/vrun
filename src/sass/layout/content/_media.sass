@@ -1,0 +1,101 @@
+.media-content
+	h3 
+		margin: 50px 0 30px
+
+	margin-top: 35px
+	margin-bottom: 70px
+	+pie-clearfix
+	h3
+		margin-bottom: 50px			
+	.media-left
+		float: left 
+		text-decoration: none
+		font-size: 15px
+		line-height: 16px
+		color: #263447
+		position: relative
+		img
+			margin: 0 10px
+	.media-right
+		float: right
+		margin-bottom: 15px
+		position: relative
+		a 
+			font-size: 15px
+			line-height: 16px
+			color: #263447
+			display: block
+			margin-right: 10px
+			img
+				margin: 0 10px
+				vertical-align: middle
+				display: inline-block
+	.media-right-items
+		display: none
+		background: #fff
+		position: absolute
+		right: 0
+		top: 20px
+		width: 100%
+		z-index: 1
+		a 
+			margin: 11px 0px
+			padding-left: 10px
+			+transition(0.2s)
+			&:hover
+				color: #ccc
+	.media-left-list
+		position: absolute
+		left: 0
+		top: -1000px
+		z-index: 1
+		background: #fff
+		width: 50%
+		a 
+			font-size: 16px
+			line-height: 16px
+			display: block
+			color: #636c77
+			padding: 15px 20px
+			+box-sizing(border-box)
+			text-decoration: none
+			+transition(0.3s)
+			&:hover
+				color: #da2828
+			&.active
+				color: #da2828
+
+
+	.media-right-filters-open
+		.media-right-items
+			display: block
+	.media-container
+		clear: both
+		padding-bottom: 30px
+		border-bottom: 3px solid #e5e9ee
+		overflow: hidden
+		a 
+			width: 100%
+			margin-bottom: 20px
+			overflow: hidden
+			display: block
+			img 
+				width: 100%
+	.media-container-item
+		width: 100%
+		background: #fff
+		padding-top: 20px
+		.media-container-item-img
+			width: 100%
+			img 
+				width: 100%
+	.media-container
+		display: none
+		&.active
+			display: block
+.media-left-open
+	.media-left-list
+		top: 101px
+		+opacity(1)
+	.city-arrow-d2
+		transform: rotate(180deg)

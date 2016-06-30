@@ -45,6 +45,9 @@
 		text-transform: uppercase
 		text-align: center
 		margin: 50px 10px
+		+transition(0.2s)
+		&:hover
+			background-color: #750606
 	span
 		color: #263447
 		font-size: 18px
@@ -116,9 +119,13 @@
 		border-bottom: 1px solid #ebedf3
 		border-top: 1px solid #ebedf3
 		margin-top: -1px
+		+transition(0.2s)
+		&:hover
+			background: #c3c7cc
 		img 
 			float: right
 			margin-right: 10px	
+			margin-top: 3px
 .races-socials
 	border-bottom: 2px solid #e5e9ee
 	padding-bottom: 30px
@@ -138,14 +145,45 @@
 		+transition(0.2s)
 		&:hover
 			background-color: #ee4d4d
-.partners
+.races-slider
 	h3
 		margin: 50px 0
+	.flexslider
+		border: none
+		border-bottom: 2px solid #e5e9ee
 
-
-
-
-
+	.flex-prev
+		background: image-url("slide-arrow-l.png") center center no-repeat
+	.flex-next
+		background: image-url("slide-arrow-r.png") center center no-repeat
+	.flex-control-paging li a
+		background: #9da3ac
+	.flex-control-paging li a:hover
+		background: #263447
+	.flex-control-paging li a.flex-active
+		background: #263447
+	.flex-control-nav
+		left: 0px
+		bottom: 17px
+	.flex-direction-nav a
+		top: 41%
+.city-information
+	margin: 50px 0 30px
+	h3
+		margin-bottom: 30px
+	.city-information-img
+		width: 100%
+		img 
+			width: 100%
+	.city-information-text
+		padding-bottom: 30px
+		border-bottom: 2px solid #e5e9ee
+		&>p  
+			margin-top: 30px
+			font-size: 15px
+			line-height: 22px
+			color: #263447
+			display: block
 
 
 
