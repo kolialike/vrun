@@ -823,6 +823,9 @@ html[xmlns] .flexslider .slides {
   display: block;
   background: #fff;
   z-index: 1;
+  -moz-box-shadow: 0 2px 4px 0px #ccc;
+  -webkit-box-shadow: 0 2px 4px 0px #ccc;
+  box-shadow: 0 2px 4px 0px #ccc;
 }
 .menu-city-items a {
   color: #636c77;
