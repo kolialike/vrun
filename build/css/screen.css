@@ -630,18 +630,22 @@ html[xmlns] .flexslider .slides {
   left: 0;
   z-index: 100;
   width: 100%;
+  background: #1d2229;
+  height: 49px;
 }
 
 .header-left {
   float: left;
   background: #1d2229;
   width: 50%;
+  height: 49px;
 }
 
 .header-right {
   float: right;
   background: #272d35;
   width: 50%;
+  height: 49px;
   position: relative;
 }
 .header-right .city {
@@ -1612,7 +1616,7 @@ html[xmlns] .flexslider .slides {
   left: 0;
   top: -1000px;
   z-index: 1;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   padding: 15px 0px 13px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -1758,7 +1762,7 @@ html[xmlns] .flexslider .slides {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background: #fff;
+  background: #f9fafd;
   padding-right: 20px;
 }
 .content h3 span {

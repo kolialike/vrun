@@ -95,11 +95,11 @@ jQuery(function($){
 	});
 
 	// filters 
-	var newsRightFilters = $(".news-right-filters");
-	newsRightFilters.on('click', function(event) {
+	var mediaRightFilters = $(".media-right-filters");
+	mediaRightFilters.on('click', function(event) {
 		event.preventDefault();
-		var newsRight = $(".news-right");
-		newsRight.toggleClass('news-right-filters-open');
+		var mediaRight = $(".media-right");
+		mediaRight.toggleClass('media-right-filters-open');
 	});
 
 
